@@ -1,0 +1,1 @@
+export { AlliesWidget } from './AlliesWidget';

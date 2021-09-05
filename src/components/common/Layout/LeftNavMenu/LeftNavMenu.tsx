@@ -132,6 +132,14 @@ export const LeftNavMenu: FunctionComponent = () => {
         </NavButton>
       </NavLinkMenu>
       <NavLinkMenu
+        to={{ pathname: '/allies', state: { fromPage: location.pathname } }}
+        className="button">
+        <NavButton>
+          <IconBlock>🤝</IconBlock>
+          Allies
+        </NavButton>
+      </NavLinkMenu>
+      <NavLinkMenu
         to={{ pathname: '/settings', state: { fromPage: location.pathname } }}
         className="button">
         <NavButton>
