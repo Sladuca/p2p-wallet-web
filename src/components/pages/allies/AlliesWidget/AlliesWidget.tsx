@@ -28,10 +28,10 @@ const IconPlus = styled(Icon)`
 `;
 
 type Props = {
-  selectedSymbol: string;
+  selectedAlly: string;
 };
 
-export const AlliesWidget: FunctionComponent<Props> = ({ selectedSymbol }) => {
+export const AlliesWidget: FunctionComponent<Props> = ({ selectedAlly }) => {
   // const allies = useSelector((state) =>
   //   state.allies..map((ally) => Ally.from(account)),
   // );
@@ -53,7 +53,7 @@ export const AlliesWidget: FunctionComponent<Props> = ({ selectedSymbol }) => {
           </AddButton>
         </Feature>
       }>
-      <AllyList items={allies} selectedAlly="alice" />
+      <AllyList items={allies} selectedAlly={selectedAlly} />
     </WrapperWidget>
   );
 };

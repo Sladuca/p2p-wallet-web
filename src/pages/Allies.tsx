@@ -20,7 +20,7 @@ export const Allies: FunctionComponent = () => {
     <Layout
       rightColumn={
         <WrapperTemp>
-          <AlliesWidget />
+          <AlliesWidget selectedSymbol="alice" />
         </WrapperTemp>
       }
     />
